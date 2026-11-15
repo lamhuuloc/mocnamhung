@@ -19,14 +19,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Times New Roman", Times, serif;
+    font-variant-numeric: lining-nums;
     background: #fff;
     color: #17130c;
 }
 
-/* Đảm bảo toàn bộ các thẻ văn bản kế thừa chung một form chữ */
+/* Đảm bảo toàn bộ chữ và số hiển thị thẳng hàng, cùng 1 form chuẩn */
 body, h1, h2, p, span, a, input, button {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Times New Roman", Times, serif;
+    font-variant-numeric: lining-nums;
 }
 
 /* KHUNG WEBSITE */
@@ -85,7 +87,7 @@ body, h1, h2, p, span, a, input, button {
     margin: 0;
     font-size: clamp(27px, 5vw, 42px);
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.1;
     text-transform: uppercase;
 }
@@ -101,7 +103,7 @@ body, h1, h2, p, span, a, input, button {
 .phones {
     margin: 0;
     font-size: clamp(14px, 2.2vw, 19px);
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
@@ -144,7 +146,7 @@ body, h1, h2, p, span, a, input, button {
 .details h2 {
     margin: 0 0 8px;
     font-size: clamp(19px, 2.5vw, 25px);
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -158,7 +160,7 @@ body, h1, h2, p, span, a, input, button {
 .price {
     color: #71360e;
     font-size: clamp(19px, 2.3vw, 24px) !important;
-    font-weight: 900 !important;
+    font-weight: 700 !important;
     white-space: nowrap;
 }
 
