@@ -57,7 +57,7 @@ body {
     transform: rotate(180deg);
 }
 
-/* HEADER THƯƠNG HIỆU */
+/* HEADER */
 .brand {
     display: flex;
     align-items: center;
@@ -100,7 +100,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* KHU VỰC SẢN PHẨM */
+/* SẢN PHẨM */
 .product {
     display: grid;
     grid-template-columns: minmax(0, 1.7fr) minmax(250px, .9fr);
@@ -109,12 +109,13 @@ body {
     margin: 15px 0 20px;
 }
 
-/* ẢNH HIỂN THỊ TOÀN BỘ */
+/* ẢNH SẢN PHẨM - HIỂN THỊ TOÀN BỘ */
 .product img {
     display: block;
     width: 100%;
     height: auto;
     max-height: none;
+
     object-fit: contain;
     object-position: center;
     aspect-ratio: auto;
@@ -165,7 +166,7 @@ body {
     margin: 8px 0 12px;
 }
 
-/* RESPONSIVE ĐIỆN THOẠI */
+/* ĐIỆN THOẠI */
 @media (max-width: 520px) {
 
     body {
@@ -230,7 +231,6 @@ body {
         font-size: 19px !important;
     }
 }
-
 </style>
 </head>
 
@@ -238,13 +238,13 @@ body {
 
 <main class="catalog">
 
-    <!-- HEADER THƯƠNG HIỆU -->
+    <!-- THƯƠNG HIỆU -->
     <header class="brand">
 
         <img
             class="brand-logo"
             src="logo-nh.png"
-            alt="Logo Mộc Nam Hưng"
+            alt="Logo NH Mộc Nam Hưng"
         >
 
         <div class="brand-copy">
@@ -263,12 +263,11 @@ body {
 
     </header>
 
-
     <!-- SẢN PHẨM 1 -->
     <section class="product">
 
         <img
-            src="capcan.jpg"
+            src="images/capcan.jpg"
             alt="Mẫu Cty 2 Cấp Cẩn"
         >
 
@@ -290,12 +289,11 @@ body {
 
     <div class="ornament">❧ ❦ ❧</div>
 
-
     <!-- SẢN PHẨM 2 -->
     <section class="product">
 
         <img
-            src="trungtram.jpg"
+            src="images/trungtram.jpg"
             alt="Mẫu Cty Trung Trạm"
         >
 
@@ -318,12 +316,11 @@ body {
 
     <div class="ornament">❧ ❦ ❧</div>
 
-
     <!-- SẢN PHẨM 3 -->
     <section class="product">
 
         <img
-            src="trungcan.jpg"
+            src="images/trungcan.jpg"
             alt="Mẫu Cty Trung Cẩn"
         >
 
