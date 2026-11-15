@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mộc Nam Hưng - Chuyên cung cấp các loại hòm</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; padding: 22px 14px;
+      display: flex; justify-content: center; align-items: flex-start;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #fff; color: #17130c;
+    }
+    .catalog {
+      width: min(780px, 100%); padding: 22px 24px 26px;
+      border: 4px double #c99b21; border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 8px 25px rgba(87, 58, 8, .12);
+      position: relative; overflow: hidden;
+    }
+    .catalog::before, .catalog::after {
+      content: "❧"; position: absolute; color: #c69a20;
+      font-size: 38px; line-height: 1; pointer-events: none;
+    }
+    .catalog::before { top: 5px; left: 8px; }
+    .catalog::after { bottom: 5px; right: 8px; transform: rotate(180deg); }
+    .brand {
+      display: flex; align-items: center; justify-content: center;
+      gap: 18px; padding: 8px 8px 17px;
+      border-bottom: 2px solid #d8ad35; margin-bottom: 18px;
+      text-align: center;
+    }
+    .brand-logo { width: 112px; height: 112px; object-fit: contain; flex: 0 0 auto; }
+    .brand-copy h1 {
+      margin: 0; font-size: clamp(27px, 5vw, 42px);
+      letter-spacing: 2px; font-weight: 500; line-height: 1.1;
+      text-transform: uppercase;
+    }
+    .brand-copy .tagline {
+      margin: 8px 0 5px; font-size: clamp(12px, 2vw, 16px);
+      font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+    }
+    .phones {
+      margin: 0; font-size: clamp(14px, 2.2vw, 19px);
+      font-weight: 800; letter-spacing: 1px;
+    }
+    .product {
+      display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(170px, .9fr);
+      gap: 18px; align-items: center; margin: 8px 0 16px;
+    }
+    .product img {
+      display: block; width: 100%; aspect-ratio: 1.43 / 1;
+      object-fit: cover; border: 3px solid #e4b51f; border-radius: 17px;
+      box-shadow: 0 2px 5px rgba(0,0,0,.12);
+    }
+    .details {
+      text-align: center; padding: 13px 9px; border: 1px solid #e5bd42;
+      border-radius: 9px; background: linear-gradient(145deg, #fff, #fff8df);
+      box-shadow: inset 0 0 0 2px rgba(255,255,255,.65);
+    }
+    .details h2 {
+      margin: 0 0 5px; font-size: clamp(17px, 2.5vw, 23px);
+      font-weight: 900; text-transform: uppercase;
+    }
+    .details p { margin: 4px 0; font-size: clamp(13px, 1.8vw, 16px); font-weight: 700; }
+    .price {
+      color: #71360e; font-size: clamp(17px, 2.3vw, 22px) !important;
+      font-weight: 900 !important; white-space: nowrap;
+    }
+    .ornament { text-align: center; color: #c69a20; font-size: 25px; line-height: .8; margin: -7px 0 4px; }
+    @media (max-width: 520px) {
+      body { padding: 8px 5px; }
+      .catalog { padding: 20px 11px 24px; }
+      .brand { gap: 9px; padding-bottom: 13px; }
+      .brand-logo { width: 78px; height: 78px; }
+      .brand-copy h1 { font-size: clamp(21px, 6vw, 30px); letter-spacing: 1px; }
+      .brand-copy .tagline { font-size: 10px; }
+      .phones { font-size: 12px; letter-spacing: 0; }
+      .product { grid-template-columns: 1fr; gap: 8px; margin-bottom: 18px; }
+      .product img { aspect-ratio: 1.65 / 1; }
+      .details { padding: 10px; }
+      .details h2 { font-size: 19px; }
+      .details p { font-size: 14px; }
+      .price { font-size: 19px !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="catalog">
+    <header class="brand">
+      <img class="brand-logo" src="logo-nh.png" alt="Logo NH Mộc Nam Hưng">
+      <div class="brand-copy">
+        <h1>Mộc Nam Hưng</h1>
+        <p class="tagline">Chuyên cung cấp các loại hòm</p>
+        <p class="phones">☎ 0911 371 990&nbsp; - &nbsp;0971 371 990</p>
+      </div>
+    </header>
+
+    <section class="product">
+      <img src="images/capcan.jpg" alt="Mẫu Cty 2 Cấp Cẩn">
+      <div class="details">
+        <h2>Mẫu Cty 2 Cấp Cẩn</h2>
+        <p>Kích thước: Cao 85cm Nắp Bằng</p>
+        <p class="price">GIÁ: 2.800.000 Đ</p>
+      </div>
+    </section>
+    <div class="ornament">❧ ❦ ❧</div>
+
+    <section class="product">
+      <img src="images/trungtram.jpg" alt="Mẫu Cty Trung Trạm ">
+      <div class="details">
+        <h2>Mẫu Cty Trung Trạm</h2>
+        <p>Kích thước: Cao 1m05 Ngang 78 Dài 2m05 Nắp Tròn </p>
+        <p class="price">GIÁ: 3.600.000 Đ</p>
+      </div>
+    </section>
+    <div class="ornament">❧ ❦ ❧</div>
+
+    <section class="product">
+      <img src="images/trungcan.jpg" alt="Mẫu Cty Trung Cẩn">
+      <div class="details">
+        <h2>Mẫu Cty Trung Cẩn</h2>
+        <p>Kích thước: Cao 1m05 Ngang 78 Dài 2m05 Nắp Tròn</p>
+        <p class="price">GIÁ: 3.300.000 Đ</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
